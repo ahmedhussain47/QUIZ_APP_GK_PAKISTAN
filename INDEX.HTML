@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Page</title>
+    <!-- Include Tailwind CSS from CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .bg {
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url("pk.jpg") no-repeat;
+        background-size: cover;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body
+    class="bg text-white h-screen flex flex-col justify-center items-center"
+  >
+    <h1 class="text-4xl font-bold mb-8">GK-QUIZ</h1>
+    <div class="bg-white bg-opacity-30 p-8 rounded-lg max-w-md w-full">
+      <h3 class="text-3xl text-center font-bold mb-4">
+        Select the Correct Answer
+      </h3>
+      <p class="text-center mb-4">
+        Instructions: Read the question and choose the correct answer.
+      </p>
+      <hr />
+      <p id="question" class="text-lg mb-4 mt-2">Question ----</p>
+      <div id="answer-buttons" class="mb-4 space-y-4">
+        <!-- Answer buttons will be dynamically generated here with the specified style -->
+      </div>
+      <div class="flex justify-end">
+        <button
+          id="nextBtn"
+          class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+
+    <script src="apps.js"></script>
+  </body>
+</html>
